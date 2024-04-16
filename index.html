@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha384-d/ZlzfZXyU3V+iCGwlgySLpAI9G3z+i0UmOHPkkqALa8KlkugnLhmndhQLpvC+4p"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>Bi-Cycle Store</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-white">
+      <div class="container-fluid mx-3">
+        <a class="navbar-brand text-dark" href="#">
+          <h3 class="text-uppercase logo">VELORETTI</h3>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class=" nav-link active text-uppercase text-dark dropdown-toggle" aria-current="page" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">Electric
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <li><a class="dropdown-item" href="#">Cargo Electric Bikes</a></li>
+                  <li><a class="dropdown-item" href="#">Folding Electric Bikes</a></li>
+                  <li><a class="dropdown-item" href="#">Road Electric Bikes</a></li>
+                  <li><a class="dropdown-item" href="#">Trike Electric Bikes</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link text-uppercase text-dark dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">City </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                <li><a class="dropdown-item" href="#">London</a></li>
+                <li><a class="dropdown-item" href="#">Barmingham</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link text-uppercase text-dark dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">Kids </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                <li><a class="dropdown-item" href="#">Balance Bikes</a></li>
+                <li><a class="dropdown-item" href="#">Tricycles </a></li>
+                <li><a class="dropdown-item" href="#">BMX Bikes </a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase text-dark" href="#">Accessories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase text-dark" href="#">Stores</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link text-uppercase text-dark dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">Leasing </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                <li><a class="dropdown-item" href="#">E-Bikes</a></li>
+                <li><a class="dropdown-item" href="#">Mountain Bikes</a></li>
+                <li><a class="dropdown-item" href="#">City Bicycles</a></li>
+                <li><a class="dropdown-item" href="#">Hybrid Bicycles</a></li>
+                <li><a class="dropdown-item" href="#">Tandem Bicycles</a></li>
+                <li><a class="dropdown-item" href="#">Cruiser Bicycles</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <ul class="list-unstyled d-flex align-items-center">
+              <li class="nav-item dropdown">
+                <a class="nav-link text-uppercase text-dark dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">ENG </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                  <li><a class="dropdown-item" href="#">USA</a></li>
+                  <li><a class="dropdown-item" href="#">CA</a></li>
+                  <li><a class="dropdown-item" href="#">PAK</a></li>
+
+                </ul>
+              </li>
+              <li class="me-3">
+                <i class="fa fa-user"></i>
+              </li>
+              <li>
+                <i class="fa fa-cart-arrow-down"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="hero-content">
+              <p class="text-white fs-6">VELORETTI BUSINESS</p>
+              <h2 class="hero-text">Bike lease plan for employees.</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <BikePlans>
+      <div class="container-fluid">
+        <div class="row my-5 mx-auto">
+          <div class="col-12 col-md-6 col-lg-6">
+            <img
+              src="./images/Wrapper.png"
+              class="img-fluid"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div
+            class="col-12 col-md-6 col-lg-6 d-flex flex-column justify-content-center"
+          >
+            <div class="text-area ps-5 mt-3" style="max-width: 500px">
+              <h3 class="fs-1">Bike plans for employees.</h3>
+              <p class="hero-para">
+                Veloretti Electrics benefit both the environment and the health
+                of your employees. Oh, and they look good too. Cost-free for the
+                employer and outside of the WKR.
+              </p>
+              <a href="#" type="button" class="text-decoration-none text-dark">
+                DISCOVER MORE <i class="fa fa-arrow-right text-black-50"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </BikePlans>
+
+    <section class="service-sectionone">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="service-content">
+              <h2 class="service-text">Service, maintenance and insurance</h2>
+              <p class="service-para">
+                The lease includes an all-in service package. Throughout the
+                entire 36 months, you are fully insured against damage, theft
+                and maintenance. In addition, you always have access to roadside
+                assistance.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <BikePlans>
+      <div class="container-fluid py-5">
+        <div class="row my-5 mx-auto">
+          <div class="col-12 col-md-6 col-lg-6">
+            <img src="./images/Bike.png" class="img-fluid" alt="" srcset="" />
+          </div>
+          <div
+            class="col-12 col-md-6 col-lg-6 d-flex flex-column justify-content-center"
+          >
+            <div class="text-area ps-5 mt-3" style="max-width: 500px">
+              <h3 class="fs-1">Free of charge for employers</h3>
+              <p>
+                The bike plan is totally independent of the WKR and is free for
+                you as an employer. The employee pays the lease costs and you,
+                as the employer, decide whether you want to contribute to the
+                costs.
+              </p>
+              <a href="#" type="button" class="text-decoration-none text-dark">
+                Cost Examples <i class="fa fa-arrow-right text-black-50"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </BikePlans>
+    <Work>
+      <div class="container-fluid">
+        <div class="row py-5 mx-auto my-3">
+          <div
+            class="col-12  col-md-6 col-lg-6 d-flex flex-column align-items-center justify-content-center px-5"
+          >
+            <div class="">
+              <h2 class="fs-1 mb-5">How it works</h2>
+              <div class="d-flex flex-column">
+                <div class="d-flex align-items-center">
+                  <div class="empty rounded-pill me-2"></div>
+                  <h4>Register your company</h4>
+                </div>
+                <p class="ms-5">
+                  Fill in our registration form with your company details. After
+                  your registration, our leasing partner will do a credit check.
+                  You will hear whether your application has been approved
+                  within 24 hours.
+                </p>
+              </div>
+              <div class="d-flex flex-column">
+                <div class="d-flex align-items-center">
+                  <div class="empty rounded-pill me-2"></div>
+                  <h4>Determine the requirements</h4>
+                </div>
+                <p class="ms-5">
+                  You get acces to the digital platform. Set the requirements
+                  for your employees and share the registration link.
+                </p>
+              </div>
+              <div class="d-flex flex-column">
+                <div class="d-flex align-items-center">
+                  <div class="empty rounded-pill me-2"></div>
+                  <h4>Ride your bike!</h4>
+                </div>
+                <p class="ms-5">
+                  Let's go! Your employees can choose their bikes and they'll be
+                  delivered straight to their homes.
+                </p>
+              </div>
+              <div class="d-flex flex-column mb-3">
+                <div class="d-flex align-items-center">
+                  <div class="empty rounded-pill me-2"></div>
+                  <h4>Administration</h4>
+                </div>
+                <p class="ms-5">
+                  Everything in one place. The digital platform gives you an
+                  easy overview of all the information for your payroll.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6">
+            <img src="./images/Video.png" class="img-fluid" alt="" srcset="" />
+          </div>
+        </div>
+      </div>
+    </Work>
+    <CardSection>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-6 py-5">
+            <div class="rounded h-100 p-3 d-flex flex-column back">
+              <div class="d-flex justify-content-between">
+                <div class="d-flex gap-2">
+                  <h4>Electric Ace</h4>
+                  <p>TM</p>
+                </div>
+                <div>
+                  <h6>€69,07 NET/MONTH</h6>
+                </div>
+              </div>
+              <div class="d-flex align-items-center">
+                <i class="fa fa-chevron-left"></i>
+                <div>
+                  <img
+                    src="./images/Div.png"
+                    class="img-fluid"
+                    alt=""
+                    srcset=""
+                  />
+                </div>
+                <i class="fa fa-chevron-right"></i>
+              </div>
+              <div>
+                <img
+                  src="./images/fContainer.png"
+                  class="img-fluid"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6 py-5">
+            <div class="rounded h-100 p-3 d-flex flex-column back">
+              <div class="d-flex justify-content-between">
+                <div class="d-flex gap-2">
+                  <h4>Electric IVY</h4>
+                  <p>TM</p>
+                </div>
+                <div>
+                  <h6>€69,07 NET/MONTH</h6>
+                </div>
+              </div>
+              <div class="d-flex align-items-center">
+                <i class="fa fa-chevron-left"></i>
+                <div>
+                  <img
+                    src="./images/Div (1).png"
+                    class="img-fluid"
+                    alt=""
+                    srcset=""
+                  />
+                </div>
+                <i class="fa fa-chevron-right"></i>
+              </div>
+              <div>
+                <img
+                  src="./images/fContainer.png"
+                  class="img-fluid"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </CardSection>
+    <MyForm>
+      <div class="container p-5 text-center">
+        <h2 class="mb-4">Get in Touch</h2>
+        <div class="form">
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="First Name"
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="Last Name"
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="Email Adress"
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="number"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="Phone Number"
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="Company Name"
+            />
+          </div>
+          <select class="form-select mb-3" aria-label="Default select example">
+            <option selected>Company Size</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+          <div class="mb-3">
+            <input
+              type="number"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="Number of bikes"
+            />
+          </div>
+          <div class="mb-3">
+            <textarea
+              class="form-control"
+              placeholder="How Can We Help You"
+              id="exampleFormControlTextarea1"
+              rows="12"
+            ></textarea>
+          </div>
+          <div>
+            <div class="row">
+              <div class="col-md-12 col-lg-12 col-12 rounded-pill workb ">
+                <a
+                  href="#"
+                  class="text-decoration-none p-3 text-white"
+                  type="button"
+                >
+                  <h5>Send the request</h5></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </MyForm>
+    <Accordian>
+      <div class="container Accordiantxt pb-5">
+        <h1 class="text-center Accordianh mb-4">Any questions?</h1>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+              <h5>    
+                 What about the paperwork?
+              </h5>
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <p>
+                  The bicycle plan is set up so that there will be no
+                  administrative work on your part as the employer. You can use
+                  a free online platform that has been created by our leasing
+                  partner. This provides you with a simple overview of your
+                  business and your employees, allowing you to arrange
+                  everything. It also simplifies all the paperwork. Everything
+                  is organised with just a few clicks.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+              <h4>
+                How does it work with an employee who retires early?         
+              </h4>
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is
+                hidden by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth
+                noting that just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+              <h5>
+                What does a Veloretti Bike Plan cost for an employer?
+              </h5>
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is
+                hidden by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth
+                noting that just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                <h5>How is the insurance & maintenance arranged when leasing a
+                  Veloretti bike?</h5>
+              </button>
+            </h2>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is
+                hidden by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth
+                noting that just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFive"
+                aria-expanded="false"
+                aria-controls="collapseFive"
+              >
+              <h5>
+                What are the legal requirements for the Veloretti bicycle plan?
+
+              </h5>
+              </button>
+            </h2>
+            <div
+              id="collapseFive"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is
+                hidden by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth
+                noting that just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Accordian>
+    <div class="booknow">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-12 col-md-8 col-lg-8">
+            <p class="text-white">
+              Ready to take the Electric Ivy or Ace for a spin? Electric test
+              rides are now available in Amsterdam, Amstelveen, Abcoude, Bussum,
+              Den Haag, Nijmegen, Weesp, Wormerveer, Berlin, Hamburg and Munich.
+              Schedule your test ride now and we'll see you there.
+            </p>
+          </div>
+          <div class="col-12 col-md-4 col-lg-4">
+            <div class=" text-center mt-3 ">
+              <a
+                href="#"
+                class="text-decoration-none bg-white text-black-50 p-3 rounded-pill"
+                >Book Now</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-dark pt-4 pb-5">
+      <div class="container text-center text-md-start">
+        <div class="row text-center text-md-start">
+            <div class="col-md-2 col-6 col-lg-2 col-xl-2 mx-auto mt-2">
+              <h6 class="text-uppercase mb-4 text-warning">Explorer</h6>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="text-white text-decoration-none"
+                  >Electric bikes</a>
+                </li>
+                <li>
+                  <a href="#" class="text-white text-decoration-none">City bikes</a>
+                </li>
+                <li>
+                  <a href="#" class="text-white text-decoration-none"
+                  >Kids' bikes</a
+                >
+                </li>
+               <li>
+                <a href="#" class="text-white text-decoration-none">
+                  Accessories</a
+                >
+               </li>
+                <li>
+                  <a href="#" class="text-white text-decoration-none">Outlet</a>
+  
+                </li>
+                <li>
+                  <a href="#" class="text-white text-decoration-none"
+                  >Insurance Electric</a
+                >
+                </li>
+                <li>
+                  <a href="#" class="text-white text-decoration-none">Business</a>
+                </li>
+                <li>
+                <a href="#" class="text-white text-decoration-none">Size guide</a>
+                </li>
+              </ul>
+  
+      </div>
+            <div class="col-md-2 col-6 col-lg-2 col-xl-2 mx-auto mt-2">
+              <h6 class="text-uppercase mb-4 text-warning">About Us</h6>
+             <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-white text-decoration-none">About Us</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Journal</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Reviews</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Press</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Jobs</a>
+              </li>
+             </ul>
+            </div>
+            <div class="col-md-2 col-6 col-lg-2 col-xl-2 mx-auto mt-2">
+              <h6 class="text-uppercase mb-4 text-warning">Help</h6>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="text-white text-decoration-none">Contact</a>
+                </li>
+                <li>
+                  <a href="#" class="text-white text-decoration-none">FAQ</a>
+                </li>
+                <li>
+                  <a href="#" class="text-white text-decoration-none">Delivery</a>
+                </li>
+                <li>
+                  <a href="#" class="text-white text-decoration-none"
+                    >Assembly & manuals</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-white text-decoration-none"
+                    >Payment options</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-white text-decoration-none"
+                    >Privacy policy</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-white text-decoration-none"
+                    >Terms & conditions</a
+                  >
+                </li>
+              </ul>
+            </div>
+          <div class="col-md-6 col-6 col-lg-6 col-xl-6  mx-auto mt-2">
+            <h6 class="text-uppercase mb-4 text-warning">Join the ride.</h6>
+            <p>
+              <a href="#" class="text-white text-decoration-none"
+                >Sign up for our newsletter.</a
+              >
+            </p>
+            <div>
+              <div class="row">
+                <div class="col-md-6 col-10">
+                  <div class="input-group mb-3">
+                    <div class="myinput">
+                      <input type="text" class="form-control  rounded-pill " placeholder="Enter your email adress" aria-label="Enter text" aria-describedby="button-addon1">
+                    </div> 
+                  <div class="mybutton">
+                    <button class="btn btn-secondary rounded-pill " type="button" id="button-addon1">Button</button>
+
+                  </div></div>
+                </div>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label
+                  class="form-check-label text-white"
+                  for="flexCheckDefault"
+                >
+                  By signing up, I agree to the privacy policy of Veloretti.
+                </label>
+              </div>
+          </div>
+          <div class="d-flex gap-3 mt-3" >
+            <i class="fa fa-facebook text-white"></i>
+            <i class="fa fa-instagram text-white"></i>
+            <i class="fa fa-youtube text-white"></i>
+            <i class="fa fa-linkedin text-white"></i>
+            <i class="fa fa-twitter text-white"></i>          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

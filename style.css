@@ -1,0 +1,144 @@
+.logo {
+  letter-spacing: 2px;
+}
+
+.hero-section {
+  position: relative;
+  background-image: url(./images/Hero\ Section.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: #fff;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+  /* max-width: 500px; */
+}
+.hero-para {
+  font-size: 14px;
+}
+@media (max-width: 768px) {
+  .hero-content {
+    left: 20px;
+  }
+}
+
+.hero-text {
+  font-size: 64px;
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 42px;
+  }
+}
+@media (max-width: 480px) {
+  .hero-text {
+    font-size: 32px;
+  }
+}
+
+.service-sectionone {
+  position: relative;
+  background-image: url(./images/image.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: #fff;
+}
+
+.service-content {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  color: white;
+  transform: translateY(-50%);
+  max-width: 500px;
+}
+
+.service-text {
+  font-size: 63px;
+}
+.service-para {
+  font-size: 14px;
+  max-width: 400px;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .service-text {
+    font-size: 54px;
+  }
+}
+@media (max-width: 480px) {
+  .service-text {
+    font-size: 46px;
+  }
+  .service-content {
+    margin-top: 70px;
+  }
+}
+
+.empty {
+  background-color: #eaeaea;
+  width: 40px;
+  height: 40px;
+}
+
+.back {
+  background-color: #ebedee;
+}
+
+.Accordiantxt {
+  padding-top: 100px;
+}
+
+.Accordianh {
+  font-size: 68px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .Accordianh {
+    font-size: 52px;
+  }
+}
+@media (max-width: 480px) {
+  .Accordianh {
+    font-size: 42px;
+  }
+}
+
+.booknow {
+  background-color: #404243;
+}
+
+.myinput {
+  position: relative;
+}
+
+.mybutton {
+  position: absolute;
+  right: 15%;
+}
+@media (max-width: 768px) {
+  .mybutton {
+    position: absolute;
+    right: -29%;
+  }
+}
+
+@media (max-width: 480px) {
+  .mybutton {
+    position: absolute;
+    right: -16%;
+  }
+}
+
+.workb {
+  background-color: #404243;
+}
